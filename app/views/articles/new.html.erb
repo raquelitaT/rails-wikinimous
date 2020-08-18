@@ -1,0 +1,12 @@
+<h1>New article</h1>
+
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_area :content, class:"text-area" %>
+  <%= f.submit "Create article"%>
+<% end %>
+<br>
+<%= link_to "Back to articles' list", articles_path %>
+
